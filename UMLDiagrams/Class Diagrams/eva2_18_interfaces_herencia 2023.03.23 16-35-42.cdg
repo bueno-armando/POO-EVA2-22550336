@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="eva2_18_interfaces_herencia">
+  <ClassDiagramComponents>
+    <Class name="EVA2_18_INTERFACES_HERENCIA" package="eva2_18_interfaces_herencia" visibility="public" xPosition="36.0" yPosition="47.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Prueba" package="eva2_18_interfaces_herencia" visibility="public" xPosition="371.0" yPosition="47.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="C" returnType="void" visibility="public"/>
+        <Method name="A" returnType="void" visibility="public"/>
+        <Method name="B" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="intA" package="eva2_18_interfaces_herencia" visibility="public" xPosition="85.0" yPosition="261.0">
+      <Methods>
+        <Method name="A" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Interface>
+    <Interface name="intB" package="eva2_18_interfaces_herencia" visibility="public" xPosition="352.0" yPosition="261.0">
+      <Methods>
+        <Method name="B" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="intC" package="eva2_18_interfaces_herencia" visibility="public" xPosition="576.0" yPosition="261.0">
+      <Methods>
+        <Method name="C" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="eva2_18_interfaces_herencia.Prueba" target="eva2_18_interfaces_herencia.intB"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="eva2_18_interfaces_herencia.Prueba" target="eva2_18_interfaces_herencia.intA"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="eva2_18_interfaces_herencia.Prueba" target="eva2_18_interfaces_herencia.intC"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

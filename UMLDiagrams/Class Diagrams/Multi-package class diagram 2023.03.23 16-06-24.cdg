@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-package class diagram">
+  <ClassDiagramComponents>
+    <Class name="Computadora" package="Productos" visibility="public" isFinal="true" xPosition="948.0" yPosition="591.0">
+      <Fields>
+        <Field name="tamaño" type="double" visibility="private"/>
+        <Field name="memoria" type="int" visibility="private"/>
+        <Field name="procesador" type="String" visibility="private"/>
+        <Field name="discoDuro" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="tamaño"/>
+          <Argument type="int" name="memoria"/>
+          <Argument type="String" name="procesador"/>
+          <Argument type="int" name="discoDuro"/>
+          <Argument type="String" name="fabricante"/>
+          <Argument type="String" name="modelo"/>
+          <Argument type="int" name="garantia"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="unidad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="precioVenta" returnType="double" visibility="public">
+          <Argument type="int" name="cant"/>
+        </Method>
+        <Method name="getTamaño" returnType="double" visibility="public"/>
+        <Method name="setTamaño" returnType="void" visibility="public">
+          <Argument type="double" name="tamaño"/>
+        </Method>
+        <Method name="getMemoria" returnType="int" visibility="public"/>
+        <Method name="setMemoria" returnType="void" visibility="public">
+          <Argument type="int" name="memoria"/>
+        </Method>
+        <Method name="getProcesador" returnType="String" visibility="public"/>
+        <Method name="setProcesador" returnType="void" visibility="public">
+          <Argument type="String" name="procesador"/>
+        </Method>
+        <Method name="getDiscoDuro" returnType="int" visibility="public"/>
+        <Method name="setDiscoDuro" returnType="void" visibility="public">
+          <Argument type="int" name="discoDuro"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Playera" package="Productos" visibility="public" isFinal="true" xPosition="378.0" yPosition="678.0">
+      <Fields>
+        <Field name="talla" type="int" visibility="private"/>
+        <Field name="tipo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="marca"/>
+          <Argument type="String" name="color"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="unidad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="precioVenta" returnType="double" visibility="public">
+          <Argument type="int" name="cant"/>
+        </Method>
+        <Method name="getTalla" returnType="int" visibility="public"/>
+        <Method name="setTalla" returnType="void" visibility="public">
+          <Argument type="int" name="talla"/>
+        </Method>
+        <Method name="getTipo" returnType="String" visibility="public"/>
+        <Method name="setTipo" returnType="void" visibility="public">
+          <Argument type="String" name="tipo"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ropa" package="SuperClases" visibility="public" isAbstract="true" xPosition="385.0" yPosition="342.0">
+      <Fields>
+        <Field name="marca" type="String" visibility="private"/>
+        <Field name="color" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="marca"/>
+          <Argument type="String" name="color"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="unidad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMarca" returnType="String" visibility="public"/>
+        <Method name="setMarca" returnType="void" visibility="public">
+          <Argument type="String" name="marca"/>
+        </Method>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Electronica" package="SuperClases" visibility="public" isAbstract="true" xPosition="1154.0" yPosition="223.0">
+      <Fields>
+        <Field name="fabricante" type="String" visibility="private"/>
+        <Field name="modelo" type="String" visibility="private"/>
+        <Field name="garantia" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="fabricante"/>
+          <Argument type="String" name="modelo"/>
+          <Argument type="int" name="garantia"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="unidad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getFabricante" returnType="String" visibility="public"/>
+        <Method name="setFabricante" returnType="void" visibility="public">
+          <Argument type="String" name="fabricante"/>
+        </Method>
+        <Method name="getModelo" returnType="String" visibility="public"/>
+        <Method name="setModelo" returnType="void" visibility="public">
+          <Argument type="String" name="modelo"/>
+        </Method>
+        <Method name="getGarantia" returnType="int" visibility="public"/>
+        <Method name="setGarantia" returnType="void" visibility="public">
+          <Argument type="int" name="garantia"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Producto" package="SuperClases" visibility="public" isAbstract="true" xPosition="634.0" yPosition="-4.0">
+      <Fields>
+        <Field name="precio" type="double" visibility="protected"/>
+        <Field name="nombre" type="String" visibility="protected"/>
+        <Field name="unidad" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="precio"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="unidad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="precioVenta" returnType="double" visibility="public" isAbstract="true">
+          <Argument type="int" name="cant"/>
+        </Method>
+        <Method name="getPrecio" returnType="double" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="double" name="precio"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getUnidad" returnType="String" visibility="public"/>
+        <Method name="setUnidad" returnType="void" visibility="public">
+          <Argument type="String" name="unidad"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="EVA2_15_TIENDA" package="eva2_15_tienda" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="SuperClases.Electronica" target="SuperClases.Producto"/>
+    <IsRelation name="is" source="SuperClases.Ropa" target="SuperClases.Producto"/>
+    <IsRelation name="is" source="Productos.Playera" target="SuperClases.Ropa"/>
+    <IsRelation name="is" source="Productos.Computadora" target="SuperClases.Electronica"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

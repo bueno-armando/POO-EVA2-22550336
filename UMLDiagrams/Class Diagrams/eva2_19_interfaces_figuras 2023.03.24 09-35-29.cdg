@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="eva2_19_interfaces_figuras">
+  <ClassDiagramComponents>
+    <Class name="Circulo" package="eva2_19_interfaces_figuras" visibility="public" xPosition="622.0" yPosition="639.0">
+      <Fields>
+        <Field name="radio" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="radio"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getRadio" returnType="double" visibility="public"/>
+        <Method name="setRadio" returnType="void" visibility="public">
+          <Argument type="double" name="radio"/>
+        </Method>
+        <Method name="calcularArea" returnType="double" visibility="public"/>
+        <Method name="calcularPerim" returnType="double" visibility="public"/>
+        <Method name="imprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EVA2_19_INTERFACES_FIGURAS" package="eva2_19_interfaces_figuras" visibility="public" xPosition="295.0" yPosition="731.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Triangulo" package="eva2_19_interfaces_figuras" visibility="public" xPosition="600.0" yPosition="154.0">
+      <Fields>
+        <Field name="base" type="double" visibility="private"/>
+        <Field name="alt" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="base"/>
+          <Argument type="double" name="alt"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getBase" returnType="double" visibility="public"/>
+        <Method name="setBase" returnType="void" visibility="public">
+          <Argument type="double" name="base"/>
+        </Method>
+        <Method name="getAlt" returnType="double" visibility="public"/>
+        <Method name="setAlt" returnType="void" visibility="public">
+          <Argument type="double" name="alt"/>
+        </Method>
+        <Method name="calcularArea" returnType="double" visibility="public"/>
+        <Method name="calcularPerim" returnType="double" visibility="public"/>
+        <Method name="imprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="MostrarDatos" package="eva2_19_interfaces_figuras" visibility="public" xPosition="915.0" yPosition="470.0">
+      <Methods>
+        <Method name="imprimirDatos" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="Figuras" package="eva2_19_interfaces_figuras" visibility="public" xPosition="342.0" yPosition="470.0">
+      <Methods>
+        <Method name="calcularArea" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="calcularPerim" returnType="double" visibility="package"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="eva2_19_interfaces_figuras.Circulo" target="eva2_19_interfaces_figuras.Figuras"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="eva2_19_interfaces_figuras.Circulo" target="eva2_19_interfaces_figuras.MostrarDatos"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="eva2_19_interfaces_figuras.Triangulo" target="eva2_19_interfaces_figuras.Figuras"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="eva2_19_interfaces_figuras.Triangulo" target="eva2_19_interfaces_figuras.MostrarDatos"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
