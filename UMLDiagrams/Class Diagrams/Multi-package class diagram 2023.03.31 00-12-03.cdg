@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-package class diagram">
+  <ClassDiagramComponents>
+    <Class name="Statistics" package="Entities" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="points" type="int" visibility="private"/>
+        <Field name="assists" type="int" visibility="private"/>
+        <Field name="rebounds" type="int" visibility="private"/>
+        <Field name="blocks" type="int" visibility="private"/>
+        <Field name="fouls" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="points"/>
+          <Argument type="int" name="assists"/>
+          <Argument type="int" name="rebounds"/>
+          <Argument type="int" name="blocks"/>
+          <Argument type="int" name="fouls"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getPoints" returnType="int" visibility="public"/>
+        <Method name="setPoints" returnType="void" visibility="public">
+          <Argument type="int" name="points"/>
+        </Method>
+        <Method name="getAssists" returnType="int" visibility="public"/>
+        <Method name="setAssists" returnType="void" visibility="public">
+          <Argument type="int" name="assists"/>
+        </Method>
+        <Method name="getRebounds" returnType="int" visibility="public"/>
+        <Method name="setRebounds" returnType="void" visibility="public">
+          <Argument type="int" name="rebounds"/>
+        </Method>
+        <Method name="getBlocks" returnType="int" visibility="public"/>
+        <Method name="setBlocks" returnType="void" visibility="public">
+          <Argument type="int" name="blocks"/>
+        </Method>
+        <Method name="getFouls" returnType="int" visibility="public"/>
+        <Method name="setFouls" returnType="void" visibility="public">
+          <Argument type="int" name="fouls"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="PrintInfo" package="Entities" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Methods>
+        <Method name="printData" returnType="void" visibility="package"/>
+        <Method name="printStats" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Class name="Persona" package="Entities" visibility="public" isAbstract="true" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="lastName" type="String" visibility="private"/>
+        <Field name="age" type="int" visibility="private"/>
+        <Field name="city" type="String" visibility="private"/>
+        <Field name="career" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="lastName"/>
+          <Argument type="int" name="age"/>
+          <Argument type="String" name="city"/>
+          <Argument type="String" name="career"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getLastName" returnType="String" visibility="public"/>
+        <Method name="setLastName" returnType="void" visibility="public">
+          <Argument type="String" name="lastName"/>
+        </Method>
+        <Method name="getAge" returnType="int" visibility="public"/>
+        <Method name="setAge" returnType="void" visibility="public">
+          <Argument type="int" name="age"/>
+        </Method>
+        <Method name="getCity" returnType="String" visibility="public"/>
+        <Method name="setCity" returnType="void" visibility="public">
+          <Argument type="String" name="city"/>
+        </Method>
+        <Method name="getCareer" returnType="String" visibility="public"/>
+        <Method name="setCareer" returnType="void" visibility="public">
+          <Argument type="String" name="career"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Team" package="Entities" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="teamName" type="String" visibility="private"/>
+        <Field name="score" type="int" visibility="private"/>
+        <Field name="players" type="Player[]" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="teamName"/>
+          <Argument type="int" name="score"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getTeamName" returnType="String" visibility="public"/>
+        <Method name="setTeamName" returnType="void" visibility="public">
+          <Argument type="String" name="teamName"/>
+        </Method>
+        <Method name="getScore" returnType="int" visibility="public"/>
+        <Method name="setScore" returnType="void" visibility="public">
+          <Argument type="int" name="score"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Player" package="SubClases" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="position" type="String" visibility="private"/>
+        <Field name="number" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="position"/>
+          <Argument type="int" name="number"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="lastName"/>
+          <Argument type="int" name="age"/>
+          <Argument type="String" name="city"/>
+          <Argument type="String" name="career"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPosition" returnType="String" visibility="public"/>
+        <Method name="setPosition" returnType="void" visibility="public">
+          <Argument type="String" name="position"/>
+        </Method>
+        <Method name="getNumber" returnType="int" visibility="public"/>
+        <Method name="setNumber" returnType="void" visibility="public">
+          <Argument type="int" name="number"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PROYECTO_OOP_BASQUETBOL" package="proyecto_oop_basquetbol" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="SubClases.Player" target="Entities.Persona"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
